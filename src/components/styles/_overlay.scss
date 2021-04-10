@@ -3,6 +3,7 @@
 
 .overlay {
   font-family: $fontFamily;
+  -webkit-font-smoothing: antialiased;
   overflow-y: auto;
   background: $pageBackground;
   width: 100%;

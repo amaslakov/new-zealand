@@ -6,6 +6,7 @@
 
 .main {
   font-family: $fontFamily;
+  -webkit-font-smoothing: antialiased;
   text-align: center;
   background: $pageBackground;
   min-height: 100vh;
