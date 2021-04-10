@@ -14,9 +14,10 @@
   flex-direction: column;
   align-items: center;
   color: $primaryColor;
-  transition: transform 0.3s ease-out;
+  transition: transform $transitionDuration ease-out;
 
   &--overlay-open {
+    padding-left: calc(100vw - 100%);
     transform: translateX(-25vw);
     -webkit-transform: translateX(-25vw);
   }
@@ -94,7 +95,7 @@
       overflow: hidden;
       cursor: pointer;
       outline: none;
-      transition: box-shadow 0.3s ease;
+      transition: box-shadow $transitionDuration ease;
       z-index: 1000;
 
       &--circle {

@@ -18,7 +18,7 @@
   left: 0;
   background: black;
   opacity: 0;
-  transition: opacity 0.3s ease-out;
+  transition: opacity $transitionDuration ease-out;
 
   &--modal-open {
     opacity: 0.5;
