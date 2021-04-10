@@ -1,0 +1,85 @@
+@import './variables';
+
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Old iPhone XS
+@mixin xs {
+  @media (max-width: #{$screen-sm-min - 1px}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) and (max-width: #{$screen-md-min - 1px}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (min-width: #{$screen-md-min}) and (max-width: #{$screen-lg-min - 1px}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-min - 1px}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+/*
+ * close button lines mixins
+ */
+@mixin close-button-line-xs {
+  @include xs {
+    height: $closeButtonSize-xs;
+    left: $closeButtonSize-xs / 2 - $closeButtonLineWidth;
+  }
+}
+
+@mixin close-button-line-sm {
+  @include sm {
+    height: $closeButtonSize-sm;
+    left: $closeButtonSize-sm / 2 - $closeButtonLineWidth;
+  }
+}
+
+@mixin close-button-line-md {
+  @include md {
+    height: $closeButtonSize-md;
+    left: $closeButtonSize-md / 2 - $closeButtonLineWidth;
+  }
+}
+
+@mixin close-button-line-lg {
+  @include lg {
+    height: $closeButtonSize-lg;
+    left: $closeButtonSize-lg / 2 - $closeButtonLineWidth;
+  }
+}
+
+@mixin close-button-line-xl {
+  @include xl {
+    height: $closeButtonSize-xl;
+    left: $closeButtonSize-xl / 2 - $closeButtonLineWidth;
+  }
+}
