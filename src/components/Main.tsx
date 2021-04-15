@@ -11,7 +11,7 @@ function Main() {
   return (
     <div className={`main ${exitingOrExited ? '' : 'main--overlay-open'}`}>
       <header>
-        <h4>New Zealand</h4>
+        <h1>New Zealand</h1>
         <p>
           This project might be trickier than it seems. Look around carefully. What you see? The sky is blue, the grass
           is green. The sun shines through the window.

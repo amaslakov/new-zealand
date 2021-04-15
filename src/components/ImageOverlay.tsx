@@ -52,7 +52,7 @@ function ImageOverlay() {
       <div className={`background ${entering ? 'background--modal-open' : ''}`} />
       <div role="presentation" className="modal-container" onKeyDown={handleKeyDown} tabIndex={-1}>
         <div role="dialog" aria-label={alt} className={`overlay ${entering ? 'overlay--open' : ''}`}>
-          <h4>{alt}</h4>
+          <h2>{alt}</h2>
           <img src={src} alt={alt} />
           <div
             ref={closeButtonRef}
